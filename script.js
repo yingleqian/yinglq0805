@@ -53,6 +53,8 @@ const entries = Object.entries(translations).flatMap(([selector, english]) => {
   if (elements.length !== texts.length) throw new Error(`Translation count mismatch: ${selector}`);
   return elements.map((element, index) => ({element, zh: element.innerHTML, en: texts[index]}));
 });
+const paperLinkLabels = [...document.querySelectorAll('.paper-link[aria-label]')]
+  .map(link => ({link, zh: link.getAttribute('aria-label')}));
 
 function setLanguage(lang) {
   root.lang = lang === 'en' ? 'en' : 'zh-CN';
@@ -70,6 +72,8 @@ function setLanguage(lang) {
   document.querySelector('.filters').setAttribute('aria-label', lang === 'en' ? 'Filter publications' : '筛选论文');
   document.querySelector('.skip').textContent = lang === 'en' ? 'Skip to main content' : '跳转到主要内容';
   document.querySelector('.brand').setAttribute('aria-label', lang === 'en' ? 'Leqian Ying, back to top' : '应乐倩，返回页首');
+  paperLinkLabels.forEach(({link, zh}) => link.setAttribute('aria-label', lang === 'en'
+    ? `Open publication: ${link.closest('.paper').querySelector('h3').textContent.trim()}` : zh));
   menuTrigger.setAttribute('aria-label', mobileNav.hidden
     ? (lang === 'en' ? 'Open navigation' : '打开导航')
     : (lang === 'en' ? 'Close navigation' : '关闭导航'));
