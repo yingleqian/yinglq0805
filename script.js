@@ -14,7 +14,7 @@ const translations = {
   '.hero-meta span': ['Southeast University · Clinical Medicine', 'FSTL3⁺ CAFs', 'Cancer immunotherapy'],
   '#about-title': 'About',
   '.lead': 'Starting from clinical questions, I investigate how tumor stroma and the immune microenvironment shape treatment response.',
-  '.about-prose p': ['I earned my doctoral degree in Clinical Medicine at Southeast University, focusing on radiation oncology. I am currently conducting postdoctoral research in clinical medicine, medical imaging and interventional radiology, at Southeast University.', 'My work spans cancer-associated fibroblasts in colorectal cancer, vasculogenic mimicry, immunotherapy biomarkers, and tumor metabolism and treatment resistance. I lead a Young Scientists Fund project supported by the National Natural Science Foundation of China.'],
+  '.about-prose p': ['I earned my doctoral degree in Clinical Medicine at Southeast University, focusing on radiation oncology. I am currently conducting postdoctoral research in clinical medicine, medical imaging and interventional radiology, at Southeast University.', 'My work spans cancer-associated fibroblasts in colorectal cancer, vasculogenic mimicry, immunotherapy biomarkers, and tumor metabolism and treatment resistance. I lead projects supported by the National Natural Science Foundation of China Young Scientists Fund, the China Postdoctoral Science Foundation General Program, and the Zhejiang Provincial Postdoctoral Selective Funding Program, among others.'],
   '.metrics span': ['Publications listed in CV', 'Granted patents', 'Projects led'],
   '#research-title': 'Research',
   '#research .section-heading p': 'From molecular mechanisms to biomarkers and treatment strategies.',
